@@ -152,6 +152,12 @@ header > a button:hover {
   font-size: var(--txt-reg);
   font-weight: 00;
 }
+.bonus-banner-text > span {
+  color: var(--grey-txt);
+  font-size: var(--txt-sm);
+  line-height: 1.25rem;
+  padding: 0 0.5rem;
+}
 
 /*==== bonus info ==== */
 .bonus-info {

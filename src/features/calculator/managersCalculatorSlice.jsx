@@ -21,16 +21,23 @@ const managerCalculatorSlice = createSlice({
         state[states] = parseFloat(action.payload[states], 10);
       }
     },
-    calculateTotal: (state, action) => {
-      let multiplicators =
-        state.bankMulti * state.bizMulti <= 1.5
-          ? state.bankMulti * state.bizMulti
-          : 1.5;
+    calculateTotal: (state) => {
+      let multiplicators;
+      if (state.bizMulti && state.bankMulti) {
+        multiplicators =
+          state.bankMulti * state.bizMulti <= 1.5
+            ? state.bankMulti * state.bizMulti
+            : 1.5;
+      }
+
+      console.log(multiplicators);
       const totalCount =
         state.salary *
         multiplicators *
         (state.percentage * 0.01) *
         state.months;
+
+      console.log(totalCount);
 
       if (state.months < 5) {
         state.total = 0;
