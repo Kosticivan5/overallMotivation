@@ -2,6 +2,7 @@ import TooltipIcon from "./TooltipIcon";
 import { BsInfoCircleFill } from "react-icons/bs";
 
 const Field = ({
+  type,
   title,
   tooltipText,
   name,
@@ -11,8 +12,8 @@ const Field = ({
   placeholder,
   disabled,
   icon,
-  defaultValue,
-  value,
+  defaultValue = "",
+  onchange,
 }) => {
   return (
     <div className="field">
@@ -24,7 +25,7 @@ const Field = ({
       </span>
       <div className="value">
         <input
-          type="number"
+          type={type}
           name={name}
           placeholder={placeholder}
           min={min}
@@ -32,7 +33,8 @@ const Field = ({
           step={step}
           disabled={disabled}
           defaultValue={defaultValue}
-          value={value}
+          onChange={onchange} // Handle input change
+          autoComplete="off"
         />
         {icon}
       </div>

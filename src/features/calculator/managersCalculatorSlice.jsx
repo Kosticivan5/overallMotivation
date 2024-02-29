@@ -18,7 +18,8 @@ const managerCalculatorSlice = createSlice({
     },
     updateState: (state, action) => {
       for (const states in action.payload) {
-        state[states] = parseFloat(action.payload[states], 10);
+        let newState = action.payload[states].replace(/\s/g, "");
+        state[states] = parseFloat(newState.replace(",", "."), 10);
       }
     },
     calculateTotal: (state) => {
@@ -30,14 +31,11 @@ const managerCalculatorSlice = createSlice({
             : 1.5;
       }
 
-      console.log(multiplicators);
       const totalCount =
         state.salary *
         multiplicators *
         (state.percentage * 0.01) *
         state.months;
-
-      console.log(totalCount);
 
       if (state.months < 5) {
         state.total = 0;
