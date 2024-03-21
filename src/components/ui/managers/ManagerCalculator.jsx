@@ -42,6 +42,9 @@ const ManagerCalculator = () => {
       <form onSubmit={handleSubmit}>
         <div className="calculator">
           <Fields />
+          <button className="total-button" type="submit">
+            Рассчитать премию
+          </button>
           {/* result */}
           <div className="result">
             <img src={percentImg} alt="percent-img" />
@@ -55,9 +58,9 @@ const ManagerCalculator = () => {
             </div>
           </div>
         </div>
-        <button className="total-button" type="submit">
+        {/* <button className="total-button" type="submit">
           Рассчитать премию
-        </button>
+        </button> */}
         <div className="warning">
           <PiWarningFill />
           <div>

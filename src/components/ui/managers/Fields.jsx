@@ -35,7 +35,7 @@ const Fields = () => {
         placeholder={1}
         defaultValue={1}
       />
-      <Field
+      {/* <Field
         type="number"
         title={"Ваш процент премирования"}
         tooltipText={"Фиксированное значение для вашей должности"}
@@ -43,7 +43,7 @@ const Fields = () => {
         placeholder={percentage}
         disabled={true}
         icon={"%"}
-      />
+      /> */}
       <Field
         type="number"
         title={"Мультипликатор бизнес-линии"}

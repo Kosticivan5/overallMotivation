@@ -4,6 +4,8 @@ import faqReducer from "./features/q&a/faqSlice";
 import accordionReducer from "./features/q&a/accordionSlice";
 import calculatorReducer from "./features/calculator/calculatorSlice";
 import managersCalculatorReducer from "./features/calculator/managersCalculatorSlice";
+import formulaReducer from "./features/formula/formulaSlice";
+import dmsReducer from "./featuresDMS/dmsSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,5 +14,7 @@ export const store = configureStore({
     accordion: accordionReducer,
     calculator: calculatorReducer,
     managerCalculator: managersCalculatorReducer,
+    formula: formulaReducer,
+    dms: dmsReducer,
   },
 });

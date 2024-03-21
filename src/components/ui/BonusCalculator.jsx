@@ -21,12 +21,12 @@ const BonusCalculator = () => {
       </button>
       <div className={calculatorOpen ? "content open" : "content"}>
         <article>
-          <p>
+          {/* <p>
             Для работников, принятых в течение Премируемого периода, расчёт
             производится в соответствии с условиями ниже.
-          </p>
+          </p> */}
           <section className="calculator-control">
-            <ManagersFormula />
+            {/* <ManagersFormula /> */}
             <ManagerCalculator />
           </section>
         </article>
