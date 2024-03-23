@@ -1,25 +1,22 @@
 {
   "insurance": [
     {
-      "id": "7220785996341587458",
-      "people": [
-        {
-          "tag": "parent",
-          "insurance_number": "Пр8132344",
-          "patient_id": "365004",
-          "city": "msk",
-          "add_city": true,
-          "add_city_location": "samara"
-        },
-        {
-          "tag": "child",
-          "insurance_number": "Пр7132322",
-          "patient_id": "265818",
-          "city": "msk",
-          "add_city": true,
-          "add_city_location": "samara"
-        }
-      ]
+      "is_parent": true,
+      "name": "Боченков Алексей Владимирович",
+      "insurance_number": "Пр8132344",
+      "patient_id": "365004",
+      "city": "msk",
+      "insurance_program": "Кемеровская область Стандарт",
+      "related_insurance_program": ""
+    },
+    {
+      "is_parent": false,
+      "name": "Боченкова Анна Алексеевна",
+      "insurance_number": "Пр7132322",
+      "patient_id": "265818",
+      "city": "msk",
+      "insurance_program": "Кемеровская область Стандарт",
+      "related_insurance_program": "samara"
     }
   ]
 }

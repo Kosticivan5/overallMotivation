@@ -11,7 +11,6 @@ export const getData = createAsyncThunk(
       const response = await axios(URL);
       if (response.data) {
         const data = response.data;
-        console.log(data);
         return data;
       }
     } catch (error) {
@@ -38,7 +37,6 @@ const dmsSlice = createSlice({
       .addCase(getData.fulfilled, (state, action) => {
         state.isLoading = false;
         state.data = action.payload;
-        console.log(state.data);
       })
       .addCase(getData.rejected, (state, action) => {
         state.isLoading = false;

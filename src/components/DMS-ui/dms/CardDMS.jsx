@@ -1,8 +1,11 @@
-const CardDMS = () => {
+import CardDMSBottom from "./CardDMSBottom";
+import CardDMSTop from "./CardDMSTop";
+
+const CardDMS = ({ person }) => {
   return (
     <article className="dms-card">
-      <div className="dms-card-top"></div>
-      <div className="dms-card-bottom"></div>
+      <CardDMSTop person={person} />
+      <CardDMSBottom person={person} />
     </article>
   );
 };
