@@ -23,11 +23,20 @@ const initialState = {
   data: [],
   isLoading: true,
   isError: true,
+  isModalOpen: false,
 };
 
 const dmsSlice = createSlice({
   name: "dms",
   initialState,
+  reducers: {
+    openModal: (state, action) => {
+      state.isModalOpen = true;
+    },
+    closeModal: (state, action) => {
+      state.isModalOpen = false;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getData.pending, (state, action) => {
@@ -45,5 +54,7 @@ const dmsSlice = createSlice({
       });
   },
 });
+
+export const { openModal, closeModal } = dmsSlice.actions;
 
 export default dmsSlice.reducer;

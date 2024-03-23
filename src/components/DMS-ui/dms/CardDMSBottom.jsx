@@ -1,7 +1,10 @@
 import TooltipIcon from "../../ui/TooltipIcon";
 import { BsInfoCircleFill } from "react-icons/bs";
+import { openModal } from "../../../featuresDMS/dmsSlice";
+import { useDispatch } from "react-redux";
 
 const CardDMSBottom = ({ person }) => {
+  const dispatch = useDispatch();
   const { insurance_program, related_insurance_program } = person;
   return (
     <div className="dms-card-bottom">
@@ -21,8 +24,14 @@ const CardDMSBottom = ({ person }) => {
               <BsInfoCircleFill />
             </TooltipIcon>
           </div>
-          {related_insurance_program.length > 0 || (
-            <button className="register" type="button">
+          {related_insurance_program.length > 0 ? (
+            <p>{related_insurance_program}</p>
+          ) : (
+            <button
+              onClick={() => dispatch(openModal())}
+              className="register"
+              type="button"
+            >
               Подключить
             </button>
           )}
