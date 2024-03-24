@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  calculatorOpen: false,
+  calculatorOpen: true,
 };
 
 const calculatorSlice = createSlice({

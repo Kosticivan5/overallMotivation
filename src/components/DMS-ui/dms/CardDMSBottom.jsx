@@ -2,10 +2,13 @@ import TooltipIcon from "../../ui/TooltipIcon";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { openModal } from "../../../featuresDMS/dmsSlice";
 import { useDispatch } from "react-redux";
+import BonusServices from "./BonusServices";
+import TravelingInsurance from "./TravelingInsurance";
+import InsuranceConditions from "./InsuranceConditions";
 
 const CardDMSBottom = ({ person }) => {
   const dispatch = useDispatch();
-  const { insurance_program, related_insurance_program } = person;
+  const { insurance_program, related_insurance_program, is_parent } = person;
   return (
     <div className="dms-card-bottom">
       <article className="insurance-program-info">
@@ -42,7 +45,11 @@ const CardDMSBottom = ({ person }) => {
           <a href="">Перечень медицинских учреждений по смежной программе</a>
         )}
       </article>
-      <div className="dropdowns"></div>
+      <div className="card-dropdowns">
+        {is_parent && <BonusServices />}
+        <TravelingInsurance />
+        {is_parent || <InsuranceConditions />}
+      </div>
     </div>
   );
 };

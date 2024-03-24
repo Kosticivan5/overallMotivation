@@ -11,6 +11,7 @@
   --red: #e40038;
   --blue: #00234d;
   --grey: #f1f3f5;
+  --grey-border: #e9ecf1;
   --grey-dark: #8b8b8b;
   --grey-txt: #464a54;
   --shadow: 0px 8px 24px rgba(50, 4, 36, 0.1);
@@ -947,8 +948,10 @@ Insurance
 .modal-content {
   background-color: var(--white);
   width: 560px;
+  max-height: 97vh;
   border-radius: 0.75rem;
   padding: 4rem 3.5rem;
+  overflow: auto;
 }
 
 .modal-content h2 {
@@ -990,4 +993,51 @@ Insurance
 .modal-btns button:last-child {
   background-color: var(--red);
   color: var(--white);
+}
+/* card dropdown */
+
+.card-dropdowns {
+  margin-top: 3rem;
+}
+/* ======DROPDOWN COMPONENT========= */
+
+.dropdown-container .content {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: var(--transition);
+  opacity: 0;
+  font-size: var(--txt-reg);
+  padding-top: 1rem;
+}
+
+.dropdown-container .content.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  padding: 1.875rem 0;
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+.item,
+.items {
+  padding: 1.5rem;
+  border: 1px solid var(--grey-border);
+  border-radius: 0.75rem;
+}
+
+.item {
+  grid-row: span 2;
+  min-height: 248px;
+}
+
+.items {
+  min-height: 116px;
 }
