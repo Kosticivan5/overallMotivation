@@ -7,7 +7,9 @@
       "patient_id": "365004",
       "city": "msk",
       "insurance_program": "Кемеровская область Стандарт",
-      "related_insurance_program": ""
+      "related_insurance_program": "",
+      "insur_prog_clinics": true,
+      "relat_insur_clinics": false
     },
     {
       "is_parent": false,
@@ -16,7 +18,9 @@
       "patient_id": "265818",
       "city": "msk",
       "insurance_program": "Кемеровская область Стандарт",
-      "related_insurance_program": "Новосибирская область Дети 1-17"
+      "related_insurance_program": "Новосибирская область Дети 1-17",
+      "insur_prog_clinics": true,
+      "relat_insur_clinics": true
     }
   ]
 }

@@ -8,7 +8,12 @@ import InsuranceConditions from "./InsuranceConditions";
 
 const CardDMSBottom = ({ person }) => {
   const dispatch = useDispatch();
-  const { insurance_program, related_insurance_program, is_parent } = person;
+  const {
+    insurance_program,
+    related_insurance_program,
+    is_parent,
+    insur_prog_clinics,
+  } = person;
   return (
     <div className="dms-card-bottom">
       <article className="insurance-program-info">
@@ -40,7 +45,8 @@ const CardDMSBottom = ({ person }) => {
           )}
         </div>
         <a href="">Перечень медицинских услуг</a>
-        <a href="">Перечень медицинских учреждений</a>
+        {insur_prog_clinics && <a href="">Перечень медицинских учреждений</a>}
+
         {related_insurance_program.length > 0 && (
           <a href="">Перечень медицинских учреждений по смежной программе</a>
         )}

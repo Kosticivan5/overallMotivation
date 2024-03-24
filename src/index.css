@@ -286,7 +286,7 @@ header > a button:hover {
   overflow: hidden;
 }
 .content article p {
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   color: var(--grey-txt);
   font-size: var(--txt-reg);
 }
@@ -999,6 +999,24 @@ Insurance
 .card-dropdowns {
   margin-top: 3rem;
 }
+
+.card-dropdowns h4 {
+  font-size: var(--txt-reg);
+  font-weight: 500;
+}
+
+.card-dropdowns ul li {
+  font-size: var(--txt-reg);
+  padding-left: 1rem;
+}
+
+.card-dropdowns ul li::before {
+  content: "\2022";
+  color: var(--red);
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1em;
+}
 /* ======DROPDOWN COMPONENT========= */
 
 .dropdown-container .content {
@@ -1017,27 +1035,79 @@ Insurance
   padding: 1.875rem 0;
 }
 
-/* grid */
+/* bonus services */
 
-.grid {
+.bonus-services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   grid-auto-flow: dense;
 }
 
-.item,
-.items {
+.block,
+.block-small {
   padding: 1.5rem;
   border: 1px solid var(--grey-border);
   border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.item {
+.block {
   grid-row: span 2;
   min-height: 248px;
 }
 
-.items {
+.block > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.block > div > p,
+li {
+  font-size: var(--txt-xs);
+  line-height: var(--line-height-lg);
+}
+
+.block > div > ul {
+  list-style: none;
+}
+
+.block a,
+.block-small a {
+  font-size: var(--txt-xs);
+}
+
+.block-small {
   min-height: 116px;
+}
+
+/* travel insurance */
+
+.travel-insurance {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.travel-insurance > p {
+  padding: 0;
+  line-height: var(--line-height-lg);
+}
+
+/* insurance conditions */
+
+.insurance-conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.insurance-conditions > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
