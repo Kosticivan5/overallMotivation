@@ -3,6 +3,7 @@ import InfoDMS from "../components/DMS-ui/InfoDMS";
 import { useEffect } from "react";
 import { getData } from "../featuresDMS/dmsSlice";
 import { useDispatch, useSelector } from "react-redux";
+import DMSFooter from "../components/DMS-ui/DMSFooter";
 
 const DMS = () => {
   // const dispatch = useDispatch();
@@ -24,6 +25,7 @@ const DMS = () => {
     <main className="bonus">
       <BannerDMS />
       <InfoDMS />
+      <DMSFooter />
     </main>
   );
 };
