@@ -6,8 +6,12 @@ const Modal = () => {
   const dispatch = useDispatch();
   const { isModalOpen } = useSelector((store) => store.dms);
   return (
-    <aside className={isModalOpen ? "modal show" : "modal"}>
-      <article className="modal-content">
+    <aside>
+      <div
+        onClick={() => dispatch(closeModal())}
+        className={isModalOpen ? "modal show" : "modal"}
+      ></div>
+      <article className={isModalOpen ? "modal-content show" : "modal-content"}>
         <h2>Смежная программа ДМС</h2>
         <article>
           <p>
