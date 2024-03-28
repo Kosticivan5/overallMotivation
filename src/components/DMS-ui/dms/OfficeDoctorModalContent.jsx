@@ -48,7 +48,7 @@ const OfficeDoctorModalContent = () => {
             </div>
           </div>
           <p>
-            1-й Красногвардейский <br /> пр., 19  (ОКО-2) <br /> 1 этаж
+            1-й Красногвардейский <br /> пр., 19  (ОКО-2) <br /> 1 этаж - 01.12
           </p>
           <div className="schedule">
             <div className="day">
