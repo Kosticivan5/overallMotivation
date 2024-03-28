@@ -160,8 +160,8 @@ export const faqItemsNoDms = [
         id: 1,
         question: `Я не получил полис ДМС`,
         answer: `<div class="answer-wrap">
-                <div> Вы можете обратиться на общий адрес по вопросам добровольного медицинского страхования <a href="">DMS@rosbank.ru</a>  
-                или скачать полис <a href="">в личном кабинете застрахованного</a>.</div>
+                <div> Вы можете обратиться на общий адрес по вопросам добровольного медицинского страхования <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>  
+                или скачать полис <a target="_blank" href="https://my.bestdoctor.ru/login/">в личном кабинете застрахованного</a>.</div>
             </div>`,
     },
     {
@@ -170,7 +170,7 @@ export const faqItemsNoDms = [
         answer: `<div class="answer-wrap">
                 <div> Прикрепление к программе происходит через 3 месяца работы в банке (с 1-го числа следующего месяца после 
                      возникновения права на пользование услугами ДМС). Рассылка полисов ДМС происходит 1-го числа. 
-                    Точную дату прикрепления можно уточнить по адресу <a href="">DMS@rosbank.ru</a>
+                    Точную дату прикрепления можно уточнить по адресу <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>
                  </div>
             </div>`,
     },
@@ -180,8 +180,9 @@ export const faqItemsNoDms = [
         answer: `<div class="answer-wrap">
                 <div>
                  Актуальные клиники по программе ДМС представлены в памятке к полису ДМС 
-                <a href="">личном кабинете застрахованного</a>. 
-                Полную информацию о ДМС можете найти на <a href="">странице во ВМЕСТЕ</a>
+                <a target="_blank" href="https://my.bestdoctor.ru/login/">личном кабинете застрахованного</a>. 
+                Полную информацию о ДМС можете найти на 
+                <a target="_blank" href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms5">странице во ВМЕСТЕ</a>
                 </div>
             </div>`,
     },
