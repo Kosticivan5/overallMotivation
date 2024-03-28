@@ -15,12 +15,14 @@ const InfoDMS = () => {
       {data.map((person, index) => {
         return <CardDMS key={index} person={person} />;
       })}
-      {data.length > 0 && (
+      {data.length > 0 ? (
         <div className="bottom-dropdowns">
           {isParent && <InsuranceRelatives />}
           <ContactsDMS />
           <FAQDms />
         </div>
+      ) : (
+        <FAQDms />
       )}
     </section>
   );

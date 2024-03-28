@@ -1,4 +1,11 @@
+import appleQr from "../../../src/assets/app_store.svg";
+import googlePlay from "../../../src/assets/google_play.svg";
+import { useSelector } from "react-redux";
+
 const DMSFooter = () => {
+  const { data } = useSelector((store) => store.dms);
+  const parent = data.find((person) => person.is_parent === true);
+
   return (
     <footer className="bonus-footer">
       <div>
@@ -6,27 +13,40 @@ const DMSFooter = () => {
         <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>
       </div>
 
-      <a
-        href="https://teamspace.gts.rus.socgen/sites/HRCOMM/_layouts/15/WopiFrame2.aspx?sourcedoc=%7b77CC68F4-789F-406E-8F5A-373B9E02608D%7d&file=%D0%9F%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%20%D0%94%D0%9C%D0%A1%202903.pdf&action=default"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Положение о Добровольном медицинском страховании
-      </a>
-      <a
-        href="https://teamspace.gts.rus.socgen/sites/HRCOMM/_layouts/15/WopiFrame.aspx?sourcedoc=%7b74F6F6CD-41A3-4F3B-BF96-98361004B7A6%7d&file=%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_1.%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B8_%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BF%D0%BE%D0%BB%D0%B8%D1%81%D0%B0_%D0%94%D0%9C%D0%A1.docx&action=default"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Приложение 1 к Положению о ДМС
-      </a>
-      <a
-        href="https://teamspace.gts.rus.socgen/sites/HRCOMM/_layouts/15/WopiFrame.aspx?sourcedoc=%7b23783F3A-17DD-4615-B76F-890F09B7488D%7d&file=%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%202.1.%200108.docx&action=default"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Приложение 2 к Положению о ДМС
-      </a>
+      {parent && (
+        <article className="footer-qr">
+          <div>
+            <img src={appleQr} alt="apple-store-qr" />
+            <img src={googlePlay} alt="google-play-qr" />
+          </div>
+          <div>
+            <p>
+              Установите мобильное приложение BestDoctor, чтобы полис ДМС, чат с
+              врачами, описание программы и список доступных клиник были всегда
+              под рукой.
+            </p>
+            <p>
+              Если вам понадобится помощь при регистрации, обратитесь в
+              BestDoctor по бесплатному номеру 8 (800) 101-19-47.
+            </p>
+            <a href="/download_file.html?file_id=7010402257715345979" download>
+              Памятка по работе с мобильным приложением BestDoctor
+            </a>
+          </div>
+        </article>
+      )}
+
+      <div className="footer-links">
+        <a href="/download_file.html?file_id=7010435485678206649" download>
+          Положение о Добровольном медицинском страховании
+        </a>
+        <a href="/download_file.html?file_id=7010402674547569100" download>
+          Приложение 1 к Положению о ДМС
+        </a>
+        <a href="/download_file.html?file_id=7010403148081161538" download>
+          Приложение 2 к Положению о ДМС
+        </a>
+      </div>
     </footer>
   );
 };

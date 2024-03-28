@@ -1,94 +1,104 @@
 import Dropdown from "../../Dropdown";
+import { useSelector } from "react-redux";
 
 const ContactsDMS = () => {
+  const { data } = useSelector((store) => store.dms);
+  const parent = data.find((person) => person.is_parent === true);
   return (
     <Dropdown text={"Контакты"}>
-      <article className="contacts">
-        <p>
-          Медицинское сопровождение осуществляется 24 часа в сутки, 7 дней в
-          неделю.{" "}
-        </p>
-        <p>
-          Во всех случаях ухудшения самочувствия или в случаях острого состояния
-          Вы можете обратиться в круглосуточную медицинскую службу СПАО
-          «Ингосстрах».
-        </p>
+      {parent?.msc_curator_doctor ? (
+        <article className="contacts">
+          <div className="contacts-info">
+            <div className="contact-txt">
+              <h4>Выделенный телефонный номер и почта для Застрахованных</h4>
+            </div>
+            <div className="contact">
+              <div className="phone">8-800-101-19-47</div>
 
-        <div className="contacts-info">
-          <div className="contact-txt">
-            <h4>Круглосуточно</h4>
-          </div>
-          <div className="contact">
-            <div className="phone">8-800-707-19-47</div>
-            <p>Контакт-центр</p>
-            <div className="phone">8-800-707-19-47</div>
-            <p>
-              Линия информационной поддержки по <br />
-              COVID-19
-            </p>
-          </div>
-          <div className="contact-txt">
-            <h4>Понедельник - Пятница</h4>
-            <h4>9.00 - 18.00</h4>
-          </div>
-          <div className="contact">
-            <h4>Врач-куратор – Гребенщикова Нина Владимировна</h4>
-            <span>Для решения сложных вопросов</span>
-            <div className="phone">+7 963 976 55 37</div>
-            <div className="phone">
-              <a href="mailto:Nina.Grebenschikova@ingos.ru">
-                Nina.Grebenschikova@ingos.ru
-              </a>
+              <div className="phone">
+                <a href="mailto:rosbankDMS@bestdoctor.ru">
+                  rosbankDMS@bestdoctor.ru
+                </a>
+              </div>
             </div>
-            <h4>К врачу-куратору следует обращаться по следующим вопросам:</h4>
-            <ul>
-              <li>
-                Оформление гарантийных писем по ведению беременности и
-                родовспоможению (в соответствии с Программой страхования);
-              </li>
-              <li>
-                Организация реабилитационно-восстановительного лечения (в
-                соответствии с Программой страхования);
-              </li>
-              <li>
-                Перевод госпитализированного Застрахованного из одного
-                стационара в другой в случае невозможности оказания в полном
-                объеме медицинской помощи по диагнозу;
-              </li>
-              <li>
-                Требуется помощь страховой компании в случае длительного
-                неэффективного лечения какого-либо заболевания;
-              </li>
-              <li>
-                Требуется помощь страховой компании в случае длительного
-                неэффективного лечения какого-либо заболевания;
-              </li>
-              <li>
-                Сложные случаи, выходящие за рамки стандартного согласования и
-                организации медицинской помощи.
-              </li>
-            </ul>
-          </div>
-          <div className="contact-txt">
-            <h4>Дополнительная почта</h4>
-            <h4>для обращений</h4>
-          </div>
-          <div className="contact">
-            <div className="phone">
-              <a href="mailto:rb-fa@ingos.ru">rb-fa@ingos.ru</a>
+            <div className="contact-txt">
+              <h4>Врач-куратор – Кетова Елена</h4>
             </div>
-            <p>Для родственников</p>
-            <div className="phone">
-              <a href="mailto:rb-travel@ingos.ru">rb-travel@ingos.ru</a>
+            <div className="contact">
+              <div className="phone">
+                <a href="mailto:e.ketova@bestdoctor.ru">
+                  e.ketova@bestdoctor.ru
+                </a>
+              </div>
+              <h4>
+                К врачу-куратору следует обращаться по следующим вопросам:
+              </h4>
+              <ul>
+                <li>
+                  Организация высокотехнологичной медицинской помощи в сложных
+                  случаях
+                </li>
+                <li>
+                  Организация плановых госпитализаций, сложных консультаций
+                </li>
+                <li>
+                  Курирование застрахованного в стационаре, контроль лечения
+                </li>
+                <li>
+                  Разбор претензий, застрахованных по программе страхования
+                </li>
+              </ul>
             </div>
-            <p>Для ВЗР (полис путешественника)</p>
-            <div className="phone">
-              <a href="mailto:dms@rosbank.ru">dms@rosbank.ru</a>
+            <div className="contact-txt">
+              <h4>
+                По другим вопросам можно обращаться в Управление компенсаций и
+                льгот
+              </h4>
             </div>
-            <p>Управление компенсаций и льгот</p>
+            <div className="contact">
+              <div className="phone">
+                <a href="mailto:dms@rosbank.ru">dms@rosbank.ru</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      ) : (
+        <article className="contacts">
+          <div className="contacts-info">
+            <div className="contact-txt">
+              <h4>Выделенный телефонный номер и почта для Застрахованных</h4>
+            </div>
+            <div className="contact">
+              <div className="phone">8-800-707-19-47</div>
+
+              <div className="phone">
+                <a href="mailto:rosbankDMS@bestdoctor.ru">
+                  rosbankDMS@bestdoctor.ru
+                </a>
+              </div>
+            </div>
+            <div className="contact-txt">
+              <h4>
+                Круглосуточная линия дежурных врачей BestDoctor по телефону
+              </h4>
+            </div>
+            <div className="contact">
+              <div className="phone">8-800-511-77-95</div>
+            </div>
+            <div className="contact-txt">
+              <h4>
+                По другим вопросам можно обращаться в Управление компенсаций и
+                льгот
+              </h4>
+            </div>
+            <div className="contact">
+              <div className="phone">
+                <a href="mailto:dms@rosbank.ru">dms@rosbank.ru</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      )}
     </Dropdown>
   );
 };

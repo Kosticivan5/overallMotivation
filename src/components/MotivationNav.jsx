@@ -3,30 +3,30 @@ import { NavLink } from "react-router-dom";
 const MotivationNav = () => {
   return (
     <nav className="header-nav">
-      <NavLink
+      {/* <NavLink
         to="/"
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
       >
         Премия
-      </NavLink>
+      </NavLink> */}
       <NavLink
-        to="/DMS"
+        to="/"
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
       >
         ДМС
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/insurance"
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
       >
         Страхование от несчастных случаев
-      </NavLink>
+      </NavLink> */}
     </nav>
   );
 };

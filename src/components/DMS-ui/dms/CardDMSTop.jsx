@@ -19,7 +19,7 @@ const CardDMSTop = ({ person }) => {
             Номер полиса: <span>{insurance_number}</span>
           </div>
           <div>
-            ID пациента: <span>{patient_id}</span>
+            ID: <span>{patient_id}</span>
             <TooltipIcon
               text={
                 "Используйте ID пациента, чтобы авторизоваться в Личном кабинете застрахованного"
@@ -32,7 +32,13 @@ const CardDMSTop = ({ person }) => {
       </div>
       <div className="card-top-qr">
         <img src={dmsQr} alt="qr-registration" />
-        <span>Личный кабинет застрахованного</span>
+        <a
+          href="https://my.bestdoctor.ru/login/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Личный кабинет BestDoctor
+        </a>
       </div>
     </div>
   );

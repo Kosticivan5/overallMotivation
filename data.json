@@ -3,24 +3,26 @@
     {
       "is_parent": true,
       "name": "Боченков Алексей Владимирович",
-      "insurance_number": "Пр8132344",
+      "insurance_number": "24-RBI01-000-000087-012792",
       "patient_id": "365004",
       "city": "msk",
       "insurance_program": "Кемеровская область Стандарт",
       "related_insurance_program": "",
-      "insur_prog_clinics": true,
-      "relat_insur_clinics": false
+      "insur_prog_clinics": "sdfsd",
+      "relat_insur_clinics": "",
+      "msc_curator_doctor": true,
+      "office_doctor": true
     },
     {
       "is_parent": false,
       "name": "Боченкова Анна Алексеевна",
-      "insurance_number": "Пр7132322",
+      "insurance_number": "24-RBI01-000-155087-012357",
       "patient_id": "265818",
       "city": "msk",
       "insurance_program": "Кемеровская область Стандарт",
       "related_insurance_program": "Новосибирская область Дети 1-17",
-      "insur_prog_clinics": true,
-      "relat_insur_clinics": true
+      "insur_prog_clinics": "32325235",
+      "relat_insur_clinics": "675rd6567"
     }
   ]
 }

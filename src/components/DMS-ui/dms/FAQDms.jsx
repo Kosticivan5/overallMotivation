@@ -1,24 +1,45 @@
 import Dropdown from "../../Dropdown";
 import FAQAccordion from "../../ui/FAQAccordion";
+import { useSelector } from "react-redux";
+import { faqItemsDms } from "../../../../questionsAnswers";
+import { faqItemsNoDms } from "../../../../questionsAnswers";
 
 const FAQDms = () => {
-  return (
+  const { data } = useSelector((store) => store.dms);
+
+  const parent = data.find((person) => person.is_parent === true);
+
+  // return parent ? (
+
+  return parent ? (
     <Dropdown text={"FAQ"}>
-      <FAQAccordion
-        id={1}
-        question="Я не получил полис ДМС"
-        answer={`Вы можете обратиться на общий адрес по вопросам добровольного медицинского страхования <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a> или скачать полис в личном кабинете застрахованного.`}
-      />
-      <FAQAccordion
-        id={2}
-        question="Когда я смогу получить полис ДМС?"
-        answer={`Прикрепление к программе происходит через 3 месяца работы в банке (с 1-го числа следующего месяца после возникновения права на пользование услугами ДМС). Рассылка полисов ДМС происходит 1-го числа. Точную дату прикрепления можно уточнить по адресу DMS@rosbank.ru`}
-      />
-      <FAQAccordion
-        id={3}
-        question="Где я могу ознакомиться с полным перечнем клиник по программе ДМС??"
-        answer={`Актуальные клиники по программе ДМС представлены в памятке к полису ДМС и в личном кабинете застрахованного.`}
-      />
+      {faqItemsDms.map((item) => {
+        const { id, question, answer } = item;
+        const newAnswer = <span dangerouslySetInnerHTML={{ __html: answer }} />;
+        return (
+          <FAQAccordion
+            key={id}
+            id={id}
+            question={question}
+            answer={newAnswer}
+          />
+        );
+      })}
+    </Dropdown>
+  ) : (
+    <Dropdown text={"FAQ"}>
+      {faqItemsNoDms.map((item) => {
+        const { id, question, answer } = item;
+        const newAnswer = <span dangerouslySetInnerHTML={{ __html: answer }} />;
+        return (
+          <FAQAccordion
+            key={id}
+            id={id}
+            question={question}
+            answer={newAnswer}
+          />
+        );
+      })}
     </Dropdown>
   );
 };

@@ -14,18 +14,18 @@ const router = createHashRouter([
     element: <SharedLayout />,
     errorElement: <Error />,
     children: [
+      // {
+      //   index: true,
+      //   element: <Bonus />,
+      // },
       {
         index: true,
-        element: <Bonus />,
-      },
-      {
-        path: "DMS",
         element: <DMS />,
       },
-      {
-        path: "insurance",
-        element: <Insurance />,
-      },
+      // {
+      //   path: "insurance",
+      //   element: <Insurance />,
+      // },
     ],
   },
 ]);

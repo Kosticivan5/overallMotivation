@@ -1,7 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const URL = "http://localhost:3000/insurance";
+// const URL = "http://localhost:3000/insurance";
+const URL =
+  "https://webtutor.rosbank.rus.socgen/custom_web_template.html?object_id=7009747356457065929";
 
 export const getData = createAsyncThunk(
   "dms/getData",
@@ -24,6 +26,7 @@ const initialState = {
   isLoading: true,
   isError: true,
   isModalOpen: false,
+  isDoctorModalOpen: false,
 };
 
 const dmsSlice = createSlice({
@@ -33,8 +36,14 @@ const dmsSlice = createSlice({
     openModal: (state, action) => {
       state.isModalOpen = true;
     },
+    openDoctorModal: (state, action) => {
+      state.isDoctorModalOpen = true;
+    },
     closeModal: (state, action) => {
       state.isModalOpen = false;
+    },
+    closeDoctorModal: (state, action) => {
+      state.isDoctorModalOpen = false;
     },
   },
   extraReducers: (builder) => {
@@ -46,6 +55,7 @@ const dmsSlice = createSlice({
       .addCase(getData.fulfilled, (state, action) => {
         state.isLoading = false;
         state.data = action.payload;
+        console.log(action.payload);
       })
       .addCase(getData.rejected, (state, action) => {
         state.isLoading = false;
@@ -55,6 +65,7 @@ const dmsSlice = createSlice({
   },
 });
 
-export const { openModal, closeModal } = dmsSlice.actions;
+export const { openModal, closeModal, openDoctorModal, closeDoctorModal } =
+  dmsSlice.actions;
 
 export default dmsSlice.reducer;

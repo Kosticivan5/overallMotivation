@@ -13,6 +13,7 @@ const CardDMSBottom = ({ person }) => {
     related_insurance_program,
     is_parent,
     insur_prog_clinics,
+    relat_insur_clinics,
   } = person;
   return (
     <div className="dms-card-bottom">
@@ -32,7 +33,7 @@ const CardDMSBottom = ({ person }) => {
               <BsInfoCircleFill />
             </TooltipIcon>
           </div>
-          {related_insurance_program.length > 0 ? (
+          {relat_insur_clinics !== "" && related_insurance_program !== "" ? (
             <p>{related_insurance_program}</p>
           ) : (
             <button
@@ -44,11 +45,25 @@ const CardDMSBottom = ({ person }) => {
             </button>
           )}
         </div>
-        <a href="">Перечень медицинских услуг</a>
-        {insur_prog_clinics && <a href="">Перечень медицинских учреждений</a>}
+        <a href="/download_file.html?file_id=7010403758743842869" download>
+          Перечень медицинских услуг
+        </a>
+        {insur_prog_clinics !== "" && insurance_program !== "" && (
+          <a
+            href={`/download_file.html?file_id=${insur_prog_clinics}`}
+            download
+          >
+            Перечень медицинских учреждений
+          </a>
+        )}
 
-        {related_insurance_program.length > 0 && (
-          <a href="">Перечень медицинских учреждений по смежной программе</a>
+        {relat_insur_clinics !== "" && related_insurance_program !== "" && (
+          <a
+            href={`/download_file.html?file_id=${relat_insur_clinics}`}
+            download
+          >
+            Перечень медицинских учреждений по смежной программе
+          </a>
         )}
       </article>
       <div className="card-dropdowns">
