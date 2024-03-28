@@ -717,6 +717,11 @@ form .warning span {
   margin-left:15px;
 }
 
+.faq-content-file-link {
+  color: var(--red);
+  text-decoration: underline;
+}
+
 /* ===================
 ==================== */
 
