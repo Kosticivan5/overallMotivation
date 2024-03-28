@@ -720,6 +720,8 @@ form .warning span {
 .faq-content-file-link {
   color: var(--red);
   text-decoration: underline;
+  font-family: var(--montserrat);
+  font-size: var(--txt-reg);
 }
 
 /* ===================
