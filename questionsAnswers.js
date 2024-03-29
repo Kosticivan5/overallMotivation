@@ -179,7 +179,7 @@ export const faqItemsNoDms = [
         question: `Где я могу ознакомиться с полным перечнем клиник по программе ДМС?`,
         answer: `<div class="answer-wrap">
                 <div>
-                 Актуальные клиники по программе ДМС представлены в памятке к полису ДМС 
+                 Актуальные клиники по программе ДМС представлены в памятке к полису ДМС в
                 <a target="_blank" href="https://my.bestdoctor.ru/login/">личном кабинете застрахованного</a>. 
                 Полную информацию о ДМС можете найти на 
                 <a target="_blank" href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms5">странице во ВМЕСТЕ</a>
