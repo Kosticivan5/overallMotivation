@@ -25,6 +25,9 @@ const FAQDms = () => {
           />
         );
       })}
+      <a className="faq-content-file-link" href="/download_file.html?file_id=7010832281905396898" download>
+        Памятка с ответами на частые вопросы
+      </a>
     </Dropdown>
   ) : (
     <Dropdown text={"FAQ"}>
@@ -40,6 +43,9 @@ const FAQDms = () => {
           />
         );
       })}
+      <a className="faq-content-file-link" href="/download_file.html?file_id=7010832281905396898" download>
+        Памятка с ответами на частые вопросы
+      </a>
     </Dropdown>
   );
 };
