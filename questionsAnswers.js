@@ -62,7 +62,7 @@ export const faqItemsDms = [
             <div>
                 Ознакомиться с порядком оформления полиса для родственника можно <a 
                 target="_blank"
-                href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms4">
+                href="https://join.bestdoctor.ru/family_insurance_">
                 на странице</a>. Обратите 
                 внимание, что оформить полис ДМС ближайшему родственнику можно в течение 90 дней с момента
                 начала вашего страхования.
@@ -153,7 +153,7 @@ export const faqItemsDms = [
     },
     {
         id: 11,
-        question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования  за свой счет?`,
+        question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования за свой счет?`,
         answer: `<div class="answer-wrap">
             <div>Да, это возможно. Подробную информацию можно увидеть на сайте <a target="_blank" 
             href="https://welcome.bestdoctor.ru/upgrade_dms_rosbank">BestDoctor</a>.</div>
@@ -168,7 +168,7 @@ export const faqItemsDms = [
         </div>
         <div>
             Если вы хотите продолжить обслуживание по полису ДМС на время отпуска по уходу за ребёнком, 
-             это можно сделать за свой счет. Подробную информацию можно увидеть на сайте <a target="_blank" 
+            это можно сделать за свой счет. Подробную информацию можно увидеть на сайте <a target="_blank" 
             href="https://welcome.bestdoctor.ru/upgrade_dms_rosbank">BestDoctor</a>.        
         </div>
         <div>
@@ -265,12 +265,12 @@ export const faqItemsNoDms = [
     },
     {
         id: 14,
-        question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования  за свой счет?`,
+        question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования за свой счет?`,
         answer:  faqItemsDms.find(it => it.id === 11)?.answer,
     },
-    {
+    { 
         id: 15,
         question: `Что произойдет с моим полисом ДМС, если я уйду в отпуск по уходу за ребёнком?`,
         answer:  faqItemsDms.find(it => it.id === 12)?.answer,
     },
-];
+]; 
