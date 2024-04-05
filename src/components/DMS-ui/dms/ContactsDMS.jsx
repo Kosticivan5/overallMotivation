@@ -69,7 +69,7 @@ const ContactsDMS = () => {
               <h4>Выделенный телефонный номер и почта для Застрахованных</h4>
             </div>
             <div className="contact">
-              <div className="phone">8-800-707-19-47</div>
+              <div className="phone">8-800-101-19-47</div>
 
               <div className="phone">
                 <a href="mailto:rosbankDMS@bestdoctor.ru">
