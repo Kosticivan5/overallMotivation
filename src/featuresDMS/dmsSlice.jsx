@@ -3,7 +3,7 @@ import axios from "axios";
 
 // const URL = "http://localhost:3000/insurance";
 const URL =
-  "https://webtutor.rosbank.rus.socgen/custom_web_template.html?object_id=7009747356457065929";
+  "/custom_web_template.html?object_id=7009747356457065929";
 
 export const getData = createAsyncThunk(
   "dms/getData",

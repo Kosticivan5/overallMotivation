@@ -706,6 +706,24 @@ form .warning span {
 .answer article {
   overflow: hidden;
 }
+.answer-wrap{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-wrap li{
+  font-size: var(--txt-sm);
+  margin-left:15px;
+}
+
+.faq-content-file-link {
+  color: var(--red);
+  text-decoration: underline;
+  font-family: var(--montserrat);
+  font-size: var(--txt-reg);
+}
+
 /* ===================
 ==================== */
 
