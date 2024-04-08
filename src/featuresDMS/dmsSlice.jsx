@@ -64,6 +64,7 @@ const dmsSlice = createSlice({
   },
 });
 
-export const { openModal, closeModal, openDoctorModal, closeDoctorModal } = dmsSlice.actions;
+export const { openModal, closeModal, openDoctorModal, closeDoctorModal } =
+  dmsSlice.actions;
 
 export default dmsSlice.reducer;
