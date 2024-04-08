@@ -62,7 +62,7 @@ export const faqItemsDms = [
             <div>
                 Ознакомиться с порядком оформления полиса для родственника можно <a 
                 target="_blank"
-                href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms4">
+                href="https://join.bestdoctor.ru/family_insurance_">
                 на странице</a>. Обратите 
                 внимание, что оформить полис ДМС ближайшему родственнику можно в течение 90 дней с момента
                 начала вашего страхования.
@@ -179,7 +179,9 @@ export const faqItemsDms = [
   },
 ];
 
+
 export const faqItemsNoDms = [
+
   {
     id: 1,
     question: `Я не получил полис ДМС`,
@@ -213,62 +215,62 @@ export const faqItemsNoDms = [
   {
     id: 4,
     question: `Мне необходимо оформить полис путешественника. Что для это нужно сделать?`,
-    answer: faqItemsDms.find((it) => it.id === 1)?.answer,
+    answer: faqItemsDms.find(it => it.id === 1)?.answer,
   },
   {
     id: 5,
     question: `Можно ли добавить новое лечебное учреждение в список клиник программы ДМС?`,
-    answer: faqItemsDms.find((it) => it.id === 2)?.answer,
+    answer: faqItemsDms.find(it => it.id === 2)?.answer,
   },
   {
     id: 6,
     question: `Временно работаю из другого города. Могу ли я получать медицинские услуги по полису ДМС в этом городе?`,
-    answer: faqItemsDms.find((it) => it.id === 3)?.answer,
+    answer: faqItemsDms.find(it => it.id === 3)?.answer,
   },
   {
     id: 7,
     question: `Хочу застраховать близкого родственника по программе ДМС. Что для этого необходимо сделать?`,
-    answer: faqItemsDms.find((it) => it.id === 4)?.answer,
+    answer: faqItemsDms.find(it => it.id === 4)?.answer,
   },
   {
     id: 8,
     question: `Могу ли я застраховать своего брата?`,
-    answer: faqItemsDms.find((it) => it.id === 5)?.answer,
+    answer: faqItemsDms.find(it => it.id === 5)?.answer,
   },
   {
     id: 9,
     question: `Что произойдет с полисом ДМС в случае моего увольнения из Банка?`,
-    answer: faqItemsDms.find((it) => it.id === 6)?.answer,
+    answer: faqItemsDms.find(it => it.id === 6)?.answer,
   },
   {
     id: 10,
     question: `Какие медицинские услуги входят в программу ДМС?`,
-    answer: faqItemsDms.find((it) => it.id === 7)?.answer,
+    answer: faqItemsDms.find(it => it.id === 7)?.answer,
   },
   {
     id: 11,
     question: `Как застраховать ребёнка за счет банка?`,
-    answer: faqItemsDms.find((it) => it.id === 8)?.answer,
+    answer: faqItemsDms.find(it => it.id === 8)?.answer,
   },
   {
     id: 12,
     question: `Мои данные отсутствуют в медицинском учреждении. Куда в таком случае обращаться?`,
-    answer: faqItemsDms.find((it) => it.id === 9)?.answer,
+    answer: faqItemsDms.find(it => it.id === 9)?.answer,
   },
   {
     id: 13,
     question: `Если мне потребуется экстренная медицинская помощь при нахождении в другом городе, 
 могу ли я воспользоваться полисом ДМС?`,
-    answer: faqItemsDms.find((it) => it.id === 10)?.answer,
+    answer: faqItemsDms.find(it => it.id === 10)?.answer,
   },
   {
     id: 14,
     question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования за свой счет?`,
-    answer: faqItemsDms.find((it) => it.id === 11)?.answer,
+    answer: faqItemsDms.find(it => it.id === 11)?.answer,
   },
   {
     id: 15,
     question: `Что произойдет с моим полисом ДМС, если я уйду в отпуск по уходу за ребёнком?`,
-    answer: faqItemsDms.find((it) => it.id === 12)?.answer,
+    answer: faqItemsDms.find(it => it.id === 12)?.answer,
   },
-];
+]; 

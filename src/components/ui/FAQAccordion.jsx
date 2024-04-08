@@ -18,7 +18,7 @@ const FAQAccordion = ({ id, question, answer }) => {
     <div onClick={handleClick} className="accordion">
       <div type="button" className="faq-btn">
         <span>{question}</span>
-        <div> {isAccordionOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</div>
+        {isAccordionOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
       </div>
       <div className={isAccordionOpen ? "answer open" : "answer"}>
         {

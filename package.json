@@ -8,6 +8,7 @@
     "build": "vite build",
     "postbuild": "npm run manipulate-files && npm run copy-files",
     "manipulate-files": "move dist\\index.html dist\\index_tmp.html && type wt.html dist\\index_tmp.html >> dist\\index.html && del dist\\index_tmp.html && sed -i \"s/%%CUR_USER_ID%%/<%=curUserID%>/\" dist\\index.html && move dist\\index_tmp.html dist\\index.html",
+    "manipulate-files2": "mv dist/index.html dist/index_tmp.html && cat wt.html dist/index_tmp.html >> dist/index.html && rm dist/index_tmp.html && sed 's/%%CUR_USER_ID%%/<%=curUserID%>/' dist/index.html >> dist/index_tmp.html && mv dist/index_tmp.html dist/index.html",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "db": "json-server db.json"

@@ -59,7 +59,6 @@ header > a {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  width: 50%;
 }
 
 header > a button {
@@ -666,10 +665,6 @@ form .warning span {
   border: none;
 }
 
-.accordion .faq-btn svg {
-  font-size: var(--txt-sm);
-}
-
 .accordion {
   padding: 1.5rem 2rem;
   border: 1px solid #ebebec;
@@ -1208,7 +1203,6 @@ Insurance
   font-size: var(--txt-sm);
   font-weight: 500;
   border: none;
-  gap: 2rem;
 }
 
 .dropdown-container .content.open {
@@ -1309,7 +1303,7 @@ li {
   color: var(--grey-txt);
 }
 
-/* ======bottom dropdowns===== */
+/* ======bottm dropdowns===== */
 
 .bottom-dropdowns {
   padding-top: 1rem;

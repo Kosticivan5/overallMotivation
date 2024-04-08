@@ -16,14 +16,7 @@ const FAQDms = () => {
       {faqItemsDms.map((item) => {
         const { id, question, answer } = item;
         const newAnswer = <span dangerouslySetInnerHTML={{ __html: answer }} />;
-        return (
-          <FAQAccordion
-            key={id}
-            id={id}
-            question={question}
-            answer={newAnswer}
-          />
-        );
+        return <FAQAccordion key={id} id={id} question={question} answer={newAnswer} />;
       })}
       <a className="faq-content-file-link" href="/download_file.html?file_id=7010832281905396898" download>
         Памятка с ответами на частые вопросы
@@ -34,14 +27,7 @@ const FAQDms = () => {
       {faqItemsNoDms.map((item) => {
         const { id, question, answer } = item;
         const newAnswer = <span dangerouslySetInnerHTML={{ __html: answer }} />;
-        return (
-          <FAQAccordion
-            key={id}
-            id={id}
-            question={question}
-            answer={newAnswer}
-          />
-        );
+        return <FAQAccordion key={id} id={id} question={question} answer={newAnswer} />;
       })}
       <a className="faq-content-file-link" href="/download_file.html?file_id=7010832281905396898" download>
         Памятка с ответами на частые вопросы
