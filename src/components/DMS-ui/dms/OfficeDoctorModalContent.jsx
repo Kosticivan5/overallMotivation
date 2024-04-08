@@ -6,10 +6,7 @@ const OfficeDoctorModalContent = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <button
-        onClick={() => dispatch(closeDoctorModal())}
-        className="close-modal"
-      >
+      <button onClick={() => dispatch(closeDoctorModal())} className="close-modal">
         <IoCloseOutline />
       </button>
       <h2>Врач в офисе</h2>
@@ -67,8 +64,7 @@ const OfficeDoctorModalContent = () => {
         <div className="modal-grid">
           <h4>Самара</h4>
           <p>
-            ул. Московское шоссе, <br /> д. 4а, стр. 1 <br /> 1 этаж - кабинет
-            4.14
+            ул. Московское шоссе, <br /> д. 4а, стр. 1 <br /> 1 этаж - кабинет 4.14
           </p>
           <div className="schedule">
             <div className="day">

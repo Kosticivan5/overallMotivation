@@ -706,15 +706,15 @@ form .warning span {
 .answer article {
   overflow: hidden;
 }
-.answer-wrap{
+.answer-wrap {
   gap: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.answer-wrap li{
+.answer-wrap li {
   font-size: var(--txt-sm);
-  margin-left:15px;
+  margin-left: 15px;
 }
 
 .faq-content-file-link {

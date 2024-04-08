@@ -1,8 +1,8 @@
 export const faqItemsDms = [
-    {
-        id: 1,
-        question: `Мне необходимо оформить полис путешественника. Что для это нужно сделать?`,
-        answer: `<div class="answer-wrap">
+  {
+    id: 1,
+    question: `Мне необходимо оформить полис путешественника. Что для это нужно сделать?`,
+    answer: `<div class="answer-wrap">
             <ol>
                 <li>Проверить наличие полиса в вашем Личном кабинете BestDoctor;</li>
                 <li>Если полис не оформлен, то для заказа необходимо написать в чат мобильного приложения 
@@ -19,23 +19,23 @@ export const faqItemsDms = [
                 href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms3">на странице во ВМЕСТЕ</a>.
             </div>
         </div>`,
-    },
-    {
-        id: 2,
-        question: `Можно ли добавить новое лечебное учреждение в список клиник программы ДМС?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 2,
+    question: `Можно ли добавить новое лечебное учреждение в список клиник программы ДМС?`,
+    answer: `<div class="answer-wrap">
 
             <div> Пришлите наименование и адрес клиники, которую Вы хотели бы добавить в перечень лечебных
                 учреждений, на адрес <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>. Запрос на добавление новой клиники будет рассмотрен
                 BestDoctor.
             </div>
         </div>`,
-    },
-    {
-        id: 3,
-        question: `Временно работаю из другого города. Могу ли я получать медицинские услуги по полису ДМС в
+  },
+  {
+    id: 3,
+    question: `Временно работаю из другого города. Могу ли я получать медицинские услуги по полису ДМС в
             этом  городе?`,
-        answer: `<div class="answer-wrap">
+    answer: `<div class="answer-wrap">
             <div>На всей территории РФ BestDoctor обеспечивает оказание неотложной и экстренной медицинскойпомощи во
                 время пребывания в других городах, не являющихся постоянным местом проживания или
                 основного места работы.
@@ -49,11 +49,11 @@ export const faqItemsDms = [
                 Также можете обратиться по адресу <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>
             </div>
         </div>`,
-    },
-    {
-        id: 4,
-        question: `Хочу застраховать близкого родственника по программе ДМС. Что для этого необходимо сделать?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 4,
+    question: `Хочу застраховать близкого родственника по программе ДМС. Что для этого необходимо сделать?`,
+    answer: `<div class="answer-wrap">
             <div>
                 Ознакомьтесь с доступными программами и ценами на <a target="_blank"
                 href="https://join.bestdoctor.ru/mnbvcxiusglaks">сайте</a> 
@@ -68,27 +68,27 @@ export const faqItemsDms = [
                 начала вашего страхования.
             </div>
         </div>`,
-    },
-    {
-        id: 5,
-        question: `Могу ли я застраховать своего брата?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 5,
+    question: `Могу ли я застраховать своего брата?`,
+    answer: `<div class="answer-wrap">
             <div>Застрахованный сотрудник может застраховать за собственный счет только близких 
             родственников – супругу/супруга, родителей и детей от 0 до 17 лет.
             </div>
         </div>`,
-    },
-    {
-        id: 6,
-        question: `Что произойдет с полисом ДМС в случае моего увольнения из Банка?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 6,
+    question: `Что произойдет с полисом ДМС в случае моего увольнения из Банка?`,
+    answer: `<div class="answer-wrap">
             <div>В случае увольнения работника по любым основаниям полис ДМС аннулируется.</div>
         </div>`,
-    },
-    {
-        id: 7,
-        question: `Какие медицинские услуги входят в программу ДМС?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 7,
+    question: `Какие медицинские услуги входят в программу ДМС?`,
+    answer: `<div class="answer-wrap">
             <div>В программу медицинского обслуживания входят следующие медицинские услуги: поликлиническая 
                 помощь (в т.ч. на дому), стоматология, госпитализации (плановые и экстренные), вызов скорой помощи,
                 сезонная вакцинация против гриппа и многое другое.
@@ -99,11 +99,11 @@ export const faqItemsDms = [
                 застрахованного</a> или <a target="_blank" href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms5">на странице</a> во ВМЕСТЕ.
             </div>
         </div>`,
-    },
-    {
-        id: 8,
-        question: `Как застраховать ребёнка за счет банка?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 8,
+    question: `Как застраховать ребёнка за счет банка?`,
+    answer: `<div class="answer-wrap">
             <div>Сотрудники могут прикрепить детей к программе ДМС за счет банка в случае, если категория
                 должности сотрудника в кадровой системе "руководитель".
             </div>
@@ -120,11 +120,11 @@ export const faqItemsDms = [
                 href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms4">во ВМЕСТЕ</a>.
             </div>
         </div>`,
-    },
-    {
-        id: 9,
-        question: `Мои данные отсутствуют в медицинском учреждении. Куда в таком случае обращаться?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 9,
+    question: `Мои данные отсутствуют в медицинском учреждении. Куда в таком случае обращаться?`,
+    answer: `<div class="answer-wrap">
             <div>Выделенный телефонный номер для Застрахованных: 8-800-101-19-47  <br/>
                 Выделенная электронная почта для Застрахованных по всем вопросам: <a href="mailto:rosbankDMS@bestdoctor.ru">rosbankDMS@bestdoctor.ru</a>
             </div>
@@ -133,12 +133,12 @@ export const faqItemsDms = [
             </div>
             <div>Так же можете обратиться по адресу <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a></div>
         </div>`,
-    },
-    {
-        id: 10,
-        question: `Если мне потребуется экстренная медицинская помощь при нахождении в другом городе,
+  },
+  {
+    id: 10,
+    question: `Если мне потребуется экстренная медицинская помощь при нахождении в другом городе,
             могу ли я воспользоваться полисом ДМС?`,
-        answer: `<div class="answer-wrap">
+    answer: `<div class="answer-wrap">
             <div>На всей территории РФ в рамках полиса ДМС возможно получение неотложной и экстренной 
                 медицинской помощи.
             </div>
@@ -150,19 +150,19 @@ export const faqItemsDms = [
                 8-800-511-77-95
             </div>
         </div>`,
-    },
-    {
-        id: 11,
-        question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования за свой счет?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 11,
+    question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования за свой счет?`,
+    answer: `<div class="answer-wrap">
             <div>Да, это возможно. Подробную информацию можно увидеть на сайте <a target="_blank" 
             href="https://welcome.bestdoctor.ru/upgrade_dms_rosbank">BestDoctor</a>.</div>
         </div>`,
-    },
-    {
-        id: 12,
-        question: `Что произойдет с моим полисом ДМС, если я уйду в отпуск по уходу за ребёнком?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 12,
+    question: `Что произойдет с моим полисом ДМС, если я уйду в отпуск по уходу за ребёнком?`,
+    answer: `<div class="answer-wrap">
         <div>Полис ДМС действует в период отпуска по беременности и родам, после чего прекращает своё действие 
             до момента выхода работника из отпуска по уходу за ребёнком.
         </div>
@@ -176,34 +176,34 @@ export const faqItemsDms = [
             нужно написать на <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>. 
         </div>
         </div>`,
-    },
+  },
 ];
 
 
 export const faqItemsNoDms = [
 
-    {
-        id: 1,
-        question: `Я не получил полис ДМС`,
-        answer: `<div class="answer-wrap">
+  {
+    id: 1,
+    question: `Я не получил полис ДМС`,
+    answer: `<div class="answer-wrap">
                 <div> Вы можете обратиться на общий адрес по вопросам добровольного медицинского страхования <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>  
                 или скачать полис <a target="_blank" href="https://my.bestdoctor.ru/login/">в личном кабинете застрахованного</a>.</div>
             </div>`,
-    },
-    {
-        id: 2,
-        question: `Когда я смогу получить полис ДМС?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 2,
+    question: `Когда я смогу получить полис ДМС?`,
+    answer: `<div class="answer-wrap">
                 <div> Прикрепление к программе происходит через 3 месяца работы в банке (с 1-го числа следующего месяца после 
                      возникновения права на пользование услугами ДМС). Рассылка полисов ДМС происходит 1-го числа. 
                     Точную дату прикрепления можно уточнить по адресу <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>
                  </div>
             </div>`,
-    },
-    {
-        id: 3,
-        question: `Где я могу ознакомиться с полным перечнем клиник по программе ДМС?`,
-        answer: `<div class="answer-wrap">
+  },
+  {
+    id: 3,
+    question: `Где я могу ознакомиться с полным перечнем клиник по программе ДМС?`,
+    answer: `<div class="answer-wrap">
                 <div>
                  Актуальные клиники по программе ДМС представлены в памятке к полису ДМС в
                 <a target="_blank" href="https://my.bestdoctor.ru/login/">личном кабинете застрахованного</a>. 
@@ -211,66 +211,66 @@ export const faqItemsNoDms = [
                 <a target="_blank" href="https://vmeste.rosbank.rus.socgen/sites/rosbank/Pages/hr/dms5">странице во ВМЕСТЕ</a>
                 </div>
             </div>`,
-    },
-    {
-        id: 4,
-        question: `Мне необходимо оформить полис путешественника. Что для это нужно сделать?`,
-        answer: faqItemsDms.find(it => it.id === 1)?.answer,
-    },
-    {
-        id: 5,
-        question: `Можно ли добавить новое лечебное учреждение в список клиник программы ДМС?`,
-        answer: faqItemsDms.find(it => it.id === 2)?.answer,
-    },
-    {
-        id: 6,
-        question: `Временно работаю из другого города. Могу ли я получать медицинские услуги по полису ДМС в этом городе?`,
-        answer: faqItemsDms.find(it => it.id === 3)?.answer,
-    },
-    {
-        id: 7,
-        question: `Хочу застраховать близкого родственника по программе ДМС. Что для этого необходимо сделать?`,
-        answer: faqItemsDms.find(it => it.id === 4)?.answer,
-    },
-    {
-        id: 8,
-        question: `Могу ли я застраховать своего брата?`,
-        answer: faqItemsDms.find(it => it.id === 5)?.answer,
-    },
-    {
-        id: 9,
-        question: `Что произойдет с полисом ДМС в случае моего увольнения из Банка?`,
-        answer: faqItemsDms.find(it => it.id === 6)?.answer,
-    },
-    {
-        id: 10,
-        question: `Какие медицинские услуги входят в программу ДМС?`,
-        answer: faqItemsDms.find(it => it.id === 7)?.answer,
-    },
-    {
-        id: 11,
-        question: `Как застраховать ребёнка за счет банка?`,
-        answer: faqItemsDms.find(it => it.id === 8)?.answer,
-    },
-    {
-        id: 12,
-        question: `Мои данные отсутствуют в медицинском учреждении. Куда в таком случае обращаться?`,
-        answer: faqItemsDms.find(it => it.id === 9)?.answer,
-    },
-    {
-        id: 13,
-        question: `Если мне потребуется экстренная медицинская помощь при нахождении в другом городе, 
+  },
+  {
+    id: 4,
+    question: `Мне необходимо оформить полис путешественника. Что для это нужно сделать?`,
+    answer: faqItemsDms.find(it => it.id === 1)?.answer,
+  },
+  {
+    id: 5,
+    question: `Можно ли добавить новое лечебное учреждение в список клиник программы ДМС?`,
+    answer: faqItemsDms.find(it => it.id === 2)?.answer,
+  },
+  {
+    id: 6,
+    question: `Временно работаю из другого города. Могу ли я получать медицинские услуги по полису ДМС в этом городе?`,
+    answer: faqItemsDms.find(it => it.id === 3)?.answer,
+  },
+  {
+    id: 7,
+    question: `Хочу застраховать близкого родственника по программе ДМС. Что для этого необходимо сделать?`,
+    answer: faqItemsDms.find(it => it.id === 4)?.answer,
+  },
+  {
+    id: 8,
+    question: `Могу ли я застраховать своего брата?`,
+    answer: faqItemsDms.find(it => it.id === 5)?.answer,
+  },
+  {
+    id: 9,
+    question: `Что произойдет с полисом ДМС в случае моего увольнения из Банка?`,
+    answer: faqItemsDms.find(it => it.id === 6)?.answer,
+  },
+  {
+    id: 10,
+    question: `Какие медицинские услуги входят в программу ДМС?`,
+    answer: faqItemsDms.find(it => it.id === 7)?.answer,
+  },
+  {
+    id: 11,
+    question: `Как застраховать ребёнка за счет банка?`,
+    answer: faqItemsDms.find(it => it.id === 8)?.answer,
+  },
+  {
+    id: 12,
+    question: `Мои данные отсутствуют в медицинском учреждении. Куда в таком случае обращаться?`,
+    answer: faqItemsDms.find(it => it.id === 9)?.answer,
+  },
+  {
+    id: 13,
+    question: `Если мне потребуется экстренная медицинская помощь при нахождении в другом городе, 
 могу ли я воспользоваться полисом ДМС?`,
-        answer: faqItemsDms.find(it => it.id === 10)?.answer,
-    },
-    {
-        id: 14,
-        question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования за свой счет?`,
-        answer:  faqItemsDms.find(it => it.id === 11)?.answer,
-    },
-    { 
-        id: 15,
-        question: `Что произойдет с моим полисом ДМС, если я уйду в отпуск по уходу за ребёнком?`,
-        answer:  faqItemsDms.find(it => it.id === 12)?.answer,
-    },
+    answer: faqItemsDms.find(it => it.id === 10)?.answer,
+  },
+  {
+    id: 14,
+    question: `Могу ли я перейти в более высокую категорию страхования и/или расширить программу страхования за свой счет?`,
+    answer: faqItemsDms.find(it => it.id === 11)?.answer,
+  },
+  {
+    id: 15,
+    question: `Что произойдет с моим полисом ДМС, если я уйду в отпуск по уходу за ребёнком?`,
+    answer: faqItemsDms.find(it => it.id === 12)?.answer,
+  },
 ]; 
