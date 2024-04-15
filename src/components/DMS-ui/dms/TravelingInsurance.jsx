@@ -10,7 +10,7 @@ const TravelingInsurance = () => {
           период путешествий по всему миру.
         </p>
 
-        <a href="/download_file.html?file_id=7010400552666099492" download>
+        <a href="/download_file.html?file_id=7017207899637020769" download>
           Скачать памятку
         </a>
       </div>
