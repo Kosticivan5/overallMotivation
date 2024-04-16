@@ -874,7 +874,7 @@ form .warning span {
 Insurance
 ============================= */
 
-.dms-card {
+.card {
   width: 100%;
   border-radius: 1rem;
   box-shadow: var(--card-box-shadow);
@@ -882,13 +882,13 @@ Insurance
   margin-top: 1rem;
 }
 
-.dms-card a {
+.card a {
   color: var(--red);
   text-decoration: underline;
 }
 
 /* card top */
-.dms-card-top {
+.card-top {
   background-color: var(--grey);
   padding: 2rem;
   border-radius: 1rem 1rem 0 0;
@@ -951,7 +951,7 @@ Insurance
 
 /* card bottom  */
 
-.dms-card-bottom {
+.card-bottom {
   padding: 2rem 1.5rem 2rem 2rem;
   border-radius: 0 0 1rem 1rem;
 }
@@ -1397,4 +1397,34 @@ li {
 
 .contact .phone a {
   text-decoration: underline;
+}
+
+/* ====NS====== */
+
+.ns-info {
+  padding-bottom: 0.5rem;
+}
+
+.ns-info > ul {
+  list-style-type: none;
+}
+
+.ns-info h4 {
+  font-weight: 500;
+}
+
+.ns-info ul li:before {
+  content: "\2022";
+  color: var(--black);
+  display: inline-block;
+  width: 1rem;
+}
+
+.ns-info a {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.ns-info ol li {
+  margin-left: 1.25rem;
 }

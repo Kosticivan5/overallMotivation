@@ -16,7 +16,7 @@ const CardDMSBottom = ({ person }) => {
     relat_insur_clinics,
   } = person;
   return (
-    <div className="dms-card-bottom">
+    <div className="card-bottom">
       <article className="insurance-program-info">
         <div>
           <h5>Программа страхования</h5>

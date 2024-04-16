@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const CardDMSTop = ({ person }) => {
   const { is_parent, name, insurance_number, patient_id } = person;
   return (
-    <div className="dms-card-top">
+    <div className="card-top">
       <div className="card-top-info">
         {is_parent ? (
           <p className="flag">Мой полис ДМС</p>

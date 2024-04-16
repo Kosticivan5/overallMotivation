@@ -42,7 +42,7 @@ const BannerDMS = () => {
           )}
         </article>
 
-        <img src={dmsImage} alt="calc-img" />
+        <img src={dmsImage} alt="dms-img" />
       </section>
     </>
   );

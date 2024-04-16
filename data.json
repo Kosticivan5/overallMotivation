@@ -10,8 +10,9 @@
       "related_insurance_program": "",
       "insur_prog_clinics": "sdfsd",
       "relat_insur_clinics": "",
-      "msc_curator_doctor": false,
-      "office_doctor": true
+      "msc_curator_doctor": true,
+      "office_doctor": true,
+      "insur_ns": "vip"
     },
     {
       "is_parent": false,
