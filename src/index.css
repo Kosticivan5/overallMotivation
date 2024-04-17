@@ -1206,6 +1206,13 @@ Insurance
   gap: 2rem;
 }
 
+.dropdown-container .content p,
+.content ul,
+.content ol {
+  color: #464a54;
+  line-height: 24px;
+}
+
 .dropdown-container .content.open {
   grid-template-rows: 1fr;
   opacity: 1;
