@@ -12,7 +12,7 @@ const NSFooter = () => {
         <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>
       </div>
 
-      {isParent?.insur_ns && (
+      {(isParent?.insur_ns !== "" || isParent) && (
         <article className="footer-qr">
           <div>
             <img src={appleQr} alt="apple-store-qr" />

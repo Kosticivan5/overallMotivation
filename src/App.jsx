@@ -22,10 +22,10 @@ const router = createHashRouter([
         path: "insurance",
         element: <Insurance />,
       },
-      {
-        path: "general-motivation",
-        element: <Bonus />,
-      },
+      // {
+      //   path: "general-motivation",
+      //   element: <Bonus />,
+      // },
     ],
   },
 ]);

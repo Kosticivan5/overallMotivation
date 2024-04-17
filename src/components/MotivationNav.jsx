@@ -19,14 +19,14 @@ const MotivationNav = () => {
       >
         Страхование от несчастных случаев
       </NavLink>
-      <NavLink
+      {/* <NavLink
         to="/general-motivation"
         className={({ isActive }) =>
           isActive ? "nav-link active" : "nav-link"
         }
       >
         Премия
-      </NavLink>
+      </NavLink> */}
     </nav>
   );
 };
