@@ -12,20 +12,21 @@ const NSFooter = () => {
         <a href="mailto:DMS@rosbank.ru">DMS@rosbank.ru</a>
       </div>
 
-      {(isParent?.insur_ns !== "" || isParent) && (
-        <article className="footer-qr">
-          <div>
-            <img src={appleQr} alt="apple-store-qr" />
-            <img src={googlePlayQr} alt="google-play-qr" />
-          </div>
-          <div>
-            <p>
-              Установите мобильное приложение Капитал LIFE, чтобы полис НС, чат
-              с поддержкой и описание программы были всегда под рукой.
-            </p>
-          </div>
-        </article>
-      )}
+      {isParent?.insur_ns !== "" ||
+        (isParent && (
+          <article className="footer-qr">
+            <div>
+              <img src={appleQr} alt="apple-store-qr" />
+              <img src={googlePlayQr} alt="google-play-qr" />
+            </div>
+            <div>
+              <p>
+                Установите мобильное приложение Капитал LIFE, чтобы полис НС,
+                чат с поддержкой и описание программы были всегда под рукой.
+              </p>
+            </div>
+          </article>
+        ))}
 
       <div className="footer-links">
         <a
