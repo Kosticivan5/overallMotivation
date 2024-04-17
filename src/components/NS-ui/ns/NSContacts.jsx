@@ -4,7 +4,7 @@ const NSContacts = () => {
   return (
     <Dropdown text={"Контакты"}>
       <article className="contacts">
-        <div className="contacts-info">
+        <div className="contacts-info info-gap">
           <div className="contact-txt">
             <h4>По всем вопросам программы страхования</h4>
             <p>
@@ -52,7 +52,8 @@ const NSContacts = () => {
           <div className="contact-txt">
             <h4>Контакт-центр КАПИТАЛ LIFE</h4>
             <p>
-              Если Вам необходима помощь в процессе получения страховой выплаты
+              Если Вам необходима помощь <br /> в процессе получения страховой
+              выплаты
             </p>
           </div>
           <div className="contact">

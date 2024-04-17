@@ -9,7 +9,7 @@ const CardNSTop = ({ name }) => {
         <h2>{name}</h2>
         <div className="insurance-info">
           <div>
-            Номер договора:: <span>0326042024</span>
+            Номер договора: <span>0326042024</span>
           </div>
         </div>
       </div>

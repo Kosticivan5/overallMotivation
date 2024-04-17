@@ -1358,7 +1358,11 @@ li {
   display: grid;
   grid-template-columns: 276px 1fr;
   column-gap: 1rem;
-  row-gap: 1.5rem;
+  row-gap: 2.5rem;
+}
+
+.contacts-info.info-gap {
+  column-gap: 2rem;
 }
 
 .contact-txt {

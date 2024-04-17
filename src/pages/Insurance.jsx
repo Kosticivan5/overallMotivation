@@ -11,7 +11,7 @@ const Insurance = () => {
   return (
     <main className="bonus">
       <BannerNS />
-      {isParent?.insur_ns !== "" || (isParent && <InfoNS />)}
+      {isParent && isParent?.insur_ns !== "" && <InfoNS />}
       <NSFooter />
     </main>
   );
