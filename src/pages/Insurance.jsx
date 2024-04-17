@@ -1,6 +1,7 @@
 import BannerNS from "../components/NS-ui/BannerNS";
 import InfoNS from "../components/NS-ui/InfoNS";
 import { useSelector } from "react-redux";
+import NSFooter from "../components/NS-ui/NSFooter";
 
 const Insurance = () => {
   const { data } = useSelector((store) => store.dms);
@@ -11,6 +12,7 @@ const Insurance = () => {
     <main className="bonus">
       <BannerNS />
       {isParent?.insur_ns !== "" && <InfoNS />}
+      <NSFooter />
     </main>
   );
 };

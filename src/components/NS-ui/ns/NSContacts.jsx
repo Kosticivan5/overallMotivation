@@ -6,36 +6,57 @@ const NSContacts = () => {
       <article className="contacts">
         <div className="contacts-info">
           <div className="contact-txt">
-            <h4>Выделенный телефонный номер и почта для Застрахованных</h4>
+            <h4>По всем вопросам программы страхования</h4>
+            <p>
+              Оксана Бочарова <br /> 9.00 - 18.00 по Мск
+            </p>
           </div>
           <div className="contact">
-            <div className="phone">8-800-101-19-47</div>
-
             <div className="phone">
-              <a href="mailto:rosbankDMS@bestdoctor.ru">
-                rosbankDMS@bestdoctor.ru
+              <a href="mailto:Oksana_Bocharova@kaplife.ru">
+                Oksana_Bocharova@kaplife.ru
               </a>
+            </div>
+            <br />
+            <div className="phone-inline">
+              <div className="phone">8(495)-980-7-980</div>
+              <span>доб. 099-1722</span>
             </div>
           </div>
           <div className="contact-txt">
-            <h4>Врач-куратор – Кетова Елена</h4>
+            <h4>Куратор по урегулированию страховых событий</h4>
+            <p>
+              Елизавета Ларионова <br /> 9.00 - 18.00 по Мск
+            </p>
           </div>
           <div className="contact">
-            <div className="phone">
-              <a href="mailto:e.ketova@bestdoctor.ru">e.ketova@bestdoctor.ru</a>
+            <div className="phone-inline">
+              <div className="phone">
+                <a href="mailto:Elizaveta_Larionova@kaplife.ru">
+                  Elizaveta_Larionova@kaplife.ru
+                </a>
+              </div>
+              <div className="phone">
+                <a href="mailto:region_life@kaplife.ru">
+                  region_life@kaplife.ru
+                </a>
+              </div>
             </div>
-            <h4>К врачу-куратору следует обращаться по следующим вопросам:</h4>
-            <ul>
-              <li>
-                Организация высокотехнологичной медицинской помощи в сложных
-                случаях
-              </li>
-              <li>Организация плановых госпитализаций, сложных консультаций</li>
-              <li>
-                Курирование застрахованного в стационаре, контроль лечения
-              </li>
-              <li>Разбор претензий, застрахованных по программе страхования</li>
-            </ul>
+            <br />
+
+            <div className="phone-inline">
+              <div className="phone">8(495)-980-7-980</div>
+              <span>доб. 099-1869</span>
+            </div>
+          </div>
+          <div className="contact-txt">
+            <h4>Контакт-центр КАПИТАЛ LIFE</h4>
+            <p>
+              Если Вам необходима помощь в процессе получения страховой выплаты
+            </p>
+          </div>
+          <div className="contact">
+            <div className="phone">8-800-200-68-86</div>
           </div>
           <div className="contact-txt">
             <h4>
@@ -45,7 +66,7 @@ const NSContacts = () => {
           </div>
           <div className="contact">
             <div className="phone">
-              <a href="mailto:dms@rosbank.ru">dms@rosbank.ru</a>
+              <a href="dms@rosbank.ru">dms@rosbank.ru</a>
             </div>
           </div>
         </div>

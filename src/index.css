@@ -1361,6 +1361,12 @@ li {
   row-gap: 1.5rem;
 }
 
+.contact-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .contact {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1395,6 +1401,14 @@ li {
   min-width: 205px;
 }
 
+.contact .phone-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--blue);
+  font-weight: 500;
+}
+
 .contact .phone a {
   text-decoration: underline;
 }
@@ -1407,6 +1421,9 @@ li {
 
 .ns-info > ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .ns-info h4 {
@@ -1423,6 +1440,11 @@ li {
 .ns-info a {
   color: var(--red);
   text-decoration: underline;
+}
+.ns-info ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .ns-info ol li {
