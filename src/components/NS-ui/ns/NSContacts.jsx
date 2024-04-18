@@ -67,7 +67,7 @@ const NSContacts = () => {
           </div>
           <div className="contact">
             <div className="phone">
-              <a href="dms@rosbank.ru">dms@rosbank.ru</a>
+              <a href="mailto:dms@rosbank.ru">dms@rosbank.ru</a>
             </div>
           </div>
         </div>
