@@ -6,7 +6,10 @@ const OfficeDoctorModalContent = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <button onClick={() => dispatch(closeDoctorModal())} className="close-modal">
+      <button
+        onClick={() => dispatch(closeDoctorModal())}
+        className="close-modal"
+      >
         <IoCloseOutline />
       </button>
       <h2>Врач в офисе</h2>
@@ -20,13 +23,13 @@ const OfficeDoctorModalContent = () => {
           <div className="schedule">
             <div className="day">
               <span>Понедельник</span>
-              <span>Среда</span>
+              <span>Вторник</span>
               <span>Четверг</span>
             </div>
             <div className="time">
-              <span>9:00 - 11:00</span>
+              <span>15:00 - 17:00</span>
 
-              <span>16:00 - 18:00</span>
+              <span>9:00 - 11:00</span>
 
               <span>14:00 - 16:00</span>
             </div>
@@ -49,12 +52,12 @@ const OfficeDoctorModalContent = () => {
           </p>
           <div className="schedule">
             <div className="day">
-              <span>Среда</span>
-              <span>Пятница</span>
+              <span>Вторник</span>
+              <span>Четверг</span>
             </div>
             <div className="time">
-              <span>14:00 - 16:00</span>
-              <span>9:00 - 11:00</span>
+              <span>15:00 - 17:00</span>
+              <span>16:00 - 17:00</span>
             </div>
           </div>
         </div>
@@ -64,7 +67,8 @@ const OfficeDoctorModalContent = () => {
         <div className="modal-grid">
           <h4>Самара</h4>
           <p>
-            ул. Московское шоссе, <br /> д. 4а, стр. 1 <br /> 1 этаж - кабинет 4.14
+            ул. Московское шоссе, <br /> д. 4а, стр. 1 <br /> 1 этаж - кабинет
+            4.14
           </p>
           <div className="schedule">
             <div className="day">
