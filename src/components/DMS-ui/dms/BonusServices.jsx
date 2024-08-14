@@ -131,10 +131,7 @@ const BonusServices = () => {
             </div>
           </div>
         </div>
-        {/* <a href="/download_file.html?file_id=7013326011609642441" download>
-          Дополнительные возможности ДМС
-        </a> */}
-        <a href="/download_file.html?file_id=7353980448269300135" download>
+        <a href="/download_file.html?file_id=7013326011609642441" download>
           Дополнительные возможности ДМС
         </a>
         <a href="/download_file.html?file_id=7010402389831677237" download>
